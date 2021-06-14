@@ -1,10 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+}
+
+.top-bar {
+    height: 60px;
+    background-color: black;
+    border: 1px solid white;
+    text-align: right;
+    line-height: 60px;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.top-bar span {
+    padding: 8px 5px;
+    background-color: grey;
+    border-radius: 10px;
 }
