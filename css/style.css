@@ -5,8 +5,10 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .flex {
@@ -17,25 +19,64 @@ body {
     font-family: sans-serif;
     color: white;
     background-color: black;
+    position: relative;
 }
+
+img {
+    flex-grow: 1;
+    height: 198px;
+    width: auto;
+}
+
+/* ***************** HEADER **************** */
 
 header {
     position: fixed;
+    z-index: 1;
     width: 100vw;
 }
 
 .top-bar {
-    height: 60px;
+    height: 80px;
     background-color: black;
-    border: 1px solid white;
     text-align: right;
-    line-height: 60px;
     vertical-align: middle;
     padding-right: 15px;
+    padding-top: 20px;
 }
 
 .top-bar span {
     padding: 8px 5px;
     background-color: grey;
-    border-radius: 10px;
+    border-radius: 7px;
+    margin-left: 5px;
+}
+
+/* ************** MAIN ************** */
+
+main {
+    overflow-y: scroll;
+    height: calc(100vh - 110px);
+    padding-top: 100px;
+}
+
+.user {
+    height: 207px;
+    position: relative;
+    justify-content: space-around;
+}
+
+.user span {
+    position: absolute;
+    top: 81%;
+    padding: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.397);
+    font-size: 18px;
+}
+
+/* **************** FOOTER **************** */
+
+footer {
+    height: 110px;
+    background-color: darkgrey;
 }
