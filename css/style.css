@@ -15,6 +15,19 @@
     display: flex;
 }
 
+.bot-bar .fas {
+    font-size: 40px;
+}
+
+.bot-bar .fa-chevron-up {
+    margin: 0 30px;
+    font-size: 15px;
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
 body {
     font-family: sans-serif;
     color: white;
@@ -77,6 +90,42 @@ main {
 /* **************** FOOTER **************** */
 
 footer {
+    font-size: 18px;
+    text-align: center;
+}
+
+.bot-bar {
     height: 110px;
-    background-color: darkgrey;
+    background-color: rgb(34, 34, 34);
+    justify-content: space-between;
+}
+
+.layout {
+    height: 100%;
+    align-items: center;
+}
+
+.space {
+    padding: 10px 15px;
+}
+
+.tendina {
+    line-height: 71px;
+    width: 40px;
+    vertical-align: middle;
+}
+
+/* Utilities */
+
+.fa-share-square {
+    color: limegreen;
+}
+
+/* Disconnect */
+
+.disconnect .end {
+    color: red;
+    height: 100%;
+    padding: 46px 35px;
+    background-color: rgb(74, 74, 74);
 }
